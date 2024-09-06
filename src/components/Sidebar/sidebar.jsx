@@ -64,18 +64,12 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   return (
     <aside
       ref={sidebar}
-      className={`flex flex-col w-1/5 min-h-screen overflow-hidden px-2 py-2 top-0 rounded-r-2xl bg-lime-500`}
+      className={`flex flex-col w-1/5 min-h-screen overflow-hidden px-2 py-2 top-0 rounded-r-2xl`}
     >
       {/* <!-- SIDEBAR HEADER --> */}
       <NavLink to="/">
         <div className="flex flex-row items-center gap-3 p-2">
-          <img
-            className="h-16 w-16"
-            src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/1017.png"
-            alt=""
-            srcset=""
-          />
-          <h4 className="text-xl font-bold text-white p-4">MarkWolf</h4>
+          <h4 className="text-5xl font-bold p-4">MarkWolf</h4>
         </div>
       </NavLink>
       {/* <!-- SIDEBAR HEADER --> */}
@@ -95,10 +89,10 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                 {(handleClick, open) => {
                   return (
                     <React.Fragment>
-                      <li className="hover:bg-green-600 hover:rounded-xl">
+                      <li className="hover:bg-[#0a8a94] hover:rounded-xl">
                         <NavLink
                           to="#"
-                          className={`group relative flex items-center gap-1.5 px-3 py-3 font-bold text-xl text-white ${
+                          className={`group relative flex items-center gap-1.5 px-3 py-3 font-bold text-xl ${
                             pathname === "/" || pathname.includes("dashboard")
                           }`}
                           onClick={(e) => {
@@ -122,21 +116,21 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                         }`}
                       >
                         <ul className="mt-4 mb-5.5 flex flex-col gap-2.5 pl-6 ">
-                          <li className="group/item hover:bg-green-600 hover:rounded-xl">
+                          <li className="group/item hover:bg-[#0a8a94] hover:rounded-xl">
                             <NavLink
                               to="/"
                               className={({ isActive }) =>
-                                "group relative flex items-center gap-2.5 rounded-md px-2 py-2 font-medium duration-300 ease-in-out text-xl text-white"
+                                "group relative flex items-center gap-2.5 rounded-md px-2 py-2 font-medium duration-300 ease-in-out text-xl"
                               }
                             >
                               Analytic
                             </NavLink>
                           </li>
-                          <li className="group/item hover:bg-green-600 hover:rounded-xl">
+                          <li className="group/item hover:bg-[#0a8a94] hover:rounded-xl">
                             <NavLink
                               to="/dashboard/ecommerce"
                               className={({ isActive }) =>
-                                "group relative flex items-center gap-2.5 rounded-md px-2 py-2 font-medium duration-300 ease-in-out text-xl text-white"
+                                "group relative flex items-center gap-2.5 rounded-md px-2 py-2 font-medium duration-300 ease-in-out text-xl"
                               }
                             >
                               eCommerce
@@ -156,7 +150,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               <li>
                 <NavLink
                   to="/profile"
-                  className={`group relative flex items-center gap-1.5 px-3 py-3 font-bold text-xl text-white hover:bg-green-600 hover:rounded-xl ${pathname.includes(
+                  className={`group relative flex items-center gap-1.5 px-3 py-3 font-bold text-xl hover:bg-[#0a8a94] hover:rounded-xl ${pathname.includes(
                     "profile"
                   )}`}
                 >
@@ -170,7 +164,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               <li>
                 <NavLink
                   to="/table"
-                  className={`group relative flex items-center gap-1.5 px-3 py-3 font-bold text-xl text-white hover:bg-green-600 hover:rounded-xl ${pathname.includes(
+                  className={`group relative flex items-center gap-1.5 px-3 py-3 font-bold text-xl hover:bg-[#0a8a94] hover:rounded-xl ${pathname.includes(
                     "table"
                   )}`}
                 >
@@ -184,7 +178,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               <li>
                 <NavLink
                   to="/setting"
-                  className={`group relative flex items-center gap-1.5 px-3 py-3 font-bold text-xl text-white hover:bg-green-600 hover:rounded-xl ${pathname.includes(
+                  className={`group relative flex items-center gap-1.5 px-3 py-3 font-bold text-xl hover:bg-[#0a8a94] hover:rounded-xl ${pathname.includes(
                     "setting"
                   )}`}
                 >
@@ -197,7 +191,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
           </div>
 
           <div>
-            <h3 className="mb-4 ml-4 text-xl font-bold text-white">Page</h3>
+            <h3 className="mb-4 ml-4 text-xl font-bold">Page</h3>
           </div>
         </nav>
         {/* <!-- Sidebar Menu --> */}
