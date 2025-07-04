@@ -19,18 +19,6 @@ const Header = (props) => {
           </Link>
         </div>
 
-        <label class="relative">
-          <input
-            class="placeholder:text-slate-400 bg-white w-full rounded-full py-2 pl-9 pr-3 shadow-sm"
-            placeholder="Search for anything..."
-            type="text"
-            name="search"
-          />
-          <div className="absolute inset-y-0 left-0 flex items-center pl-2">
-            <MagnifyingGlassCircleIcon className="h-8 w-8 text-slate-300" />
-          </div>
-        </label>
-
         <div className="flex items-center gap-3 2xsm:gap-7">
           <ul className="flex items-center gap-2 2xsm:gap-4">
             {/* <!-- Dark Mode Toggler --> */}

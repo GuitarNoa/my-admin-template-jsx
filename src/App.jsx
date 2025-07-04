@@ -13,6 +13,7 @@ import Table from "./pages/Table";
 import Alerts from "./pages/UiElements/Alerts";
 import Analytic from "./pages/Dashboard/Analytic";
 import ECommerce from "./pages/Dashboard/eCommerce";
+import Glides from "./pages/Dashboard/Glides";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -45,7 +46,16 @@ function App() {
           path="/dashboard/ecommerce"
           element={
             <>
-              <ECommerce/>
+              <ECommerce />
+            </>
+          }
+        />
+
+        <Route
+          path="/dashboard/glides"
+          element={
+            <>
+              <Glides />
             </>
           }
         />

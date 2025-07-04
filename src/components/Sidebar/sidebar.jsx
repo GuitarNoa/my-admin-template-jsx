@@ -136,6 +136,16 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                               eCommerce
                             </NavLink>
                           </li>
+                          <li className="group/item hover:bg-[#0a8a94] hover:rounded-xl">
+                            <NavLink
+                              to="/dashboard/glides"
+                              className={({ isActive }) =>
+                                "group relative flex items-center gap-2.5 rounded-md px-2 py-2 font-medium duration-300 ease-in-out text-xl"
+                              }
+                            >
+                              Glides
+                            </NavLink>
+                          </li>
                         </ul>
                       </div>
 
